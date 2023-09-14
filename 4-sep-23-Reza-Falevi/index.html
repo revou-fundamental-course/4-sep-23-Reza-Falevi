@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>KATIK</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>MATIK <span style="margin-left:10px;" class="spanheader">Mengkalkulasi Matematik</span> </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN -->
+    <div class="sectionclass">
+        <section class="Understanding">
+            <h1 class="title">Welcome to Matik</h1>
+            <p class="paragraph">Hai Sobat, Selamat Datang di Matik :]<br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangun datar
+            </p>
+
+        </section>
+        <section class="fieldbuttonsection">
+            <button class="buttonpersegi">Persegi</button>
+            <button class="buttonppanjang">P. Panjang</button>
+        </section>
+        <section class="headerluaspersegi">
+            <h2 class="headerpersegi">Luas Persegi</h2>
+        </section>
+        <div class="persegidiv">
+
+            <section class="imgpersegi"><img src="persegi.jpg" alt=""></section>
+            <section style="margin-left: 12px; font-size: 12px">
+                <p>Rumus Luas Persegi yaitu : </p>
+                <p style="justify-content: center; display:flex; font-weight:bold"> L = S x S</p>
+                <p>Di mana:</p>
+                <p>L = Luas<br>S = Sisi</p>
+                <hr>
+            </section>
+            <section class="luasinputsection">
+                <label id="label1">Hitung Luas Persegi</label>
+                <input type="number" id="luasSisi" name="luasSisi" placeholder="Masukkkan Sisi">
+            </section>
+            <section id="HasilLuas"></section>
+            <section class="inputbuttonsection">
+                <button class="button1" onclick="hitungLuas()">HITUNG</button>
+                <button class="button2">RESET</button>
+            </section>
+        </div>
+
+        <!-- MAIN END -->
+        <br>
+        <section class="headerpersegi">
+            <h2>Keliling Persegi</h2>
+        </section>
+        <div class="persegidiv">
+
+            <section class="imgpersegi"><img src="persegi.jpg" alt=""></section>
+            <section style="margin-left: 12px; font-size: 12px">
+                <p>Rumus Keliling Persegi yaitu : </p>
+                <p style="justify-content: center; display:flex; font-weight:bold"> K = 4 x S</p>
+                <p>Di mana:</p>
+                <p>K = Keliling<br>S = Sisi</p>
+                <hr>
+            </section>
+            <section class="luasinputsection">
+                <label id="label1">Hitung Keliling Persegi</label>
+                <input type="number" id="KelilingPersegi" placeholder="Masukkkan Sisi">
+                <section id="HasilKeliling"></section>
+                <section class="inputbuttonsection">
+                    <button class="button1" onclick="hitungKeliling()">HITUNG</button>
+                    <button class="button2">RESET</button>
+        </div>
+
+
+        <!-- SCRIPT JS -->
+        <script src="js/script.js"></script>
+</body>
+
+</html>
